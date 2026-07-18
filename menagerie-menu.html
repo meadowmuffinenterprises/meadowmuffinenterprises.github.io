@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadow Muffin Menagerie – Party Packages</title>
+
+    <!-- ⭐ BALLOON FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #6cad71;
+            color: #333;
+        }
+
+        header {
+            background: #f5a6f3;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* ⭐ MISSION BOX */
+        .mission-box {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 900px;
+            text-align: center;
+            font-size: 1.3rem;
+            color: white;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.20);
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            justify-items: center;
+        }
+
+        /* ⭐ BALLOON FONT APPLIED HERE */
+        .balloon-package {
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle at 30% 30%, #ffd6f5, #ff9ad8);
+            border-radius: 50%;
+            padding: 75px 25px 9px;
+            text-align: center;
+            color: black;
+            font-size: 1rem;
+            position: relative;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+            transition: transform 0.25s ease;
+            z-index: 1;
+            font-family: 'Bubblegum Sans', cursive;
+        }
+
+        .balloon-package h3,
+        .balloon-package p {
+            font-family: 'Bubblegum Sans', cursive;
+        }
+
+        .balloon-package:hover {
+            transform: translateY(-10px);
+        }
+
+        .balloon-package::after {
+            content: "";
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 26px;
+            height: 20px;
+            background: #ff9ad8;
+            border-radius: 50%;
+        }
+
+        .balloon-package::before {
+            content: "";
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 45px;
+            background: black;
+            border-radius: 2px;
+        }
+
+        /* ⭐ MAKE BALLOON CLICKABLE WITHOUT BLUE LINK STYLE */
+        .balloon-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .contact-box a {
+            color: #f0f4fa;
+            text-decoration: underline;
+        }
+
+        .contact-box a:hover {
+            color: #ffffff;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #f5a6f3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .slideshow-container {
+            max-width: 500px;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Meadow Muffin Menagerie</h1>
+    <p>Balloon Twisting • Party Entertainment • Custom Creations</p>
+    <p>Our Motto is:</p>
+    <p>“Every balloon we create will eventually deflate. What we celebrate lasts for a lifetime.”</p>
+</header>
+
+<!-- ⭐ MISSION STATEMENT ADDED HERE -->
+<div class="mission-box">
+    <strong>Our mission:</strong><br>
+    To create moments of wonder that bring families together through creativity, kindness, imagination, and interactive entertainment while making every child feel seen, celebrated, and included.
+</div>
+
+<section class="section">
+    <h2>Packages</h2>
+
+    <div class="package-grid">
+
+        <!-- BALLOON 1 -->ssss
+        <div class="balloon-package">
+            <h3>Invite the Air Benders</h3>
+            <p>Perfect for festivals, fairs, schools, churches, and community events with lots of foot traffic.</p>
+            <p>There is no booking fee—we participate as a vendor, creating balloon art for guests while adding fun, color, and excitement to your event.</p>
+        </div>
+
+        <!-- BALLOON 2 -->
+        <div class="balloon-package">
+            <h3>Private Party</h3>
+            <p>$100 • 1 Hour • Up to 30 Kids</p>
+            <p>Need more time or more kids? We’ll tailor your booking.</p>
+        </div>
+
+        <!-- ⭐ BALLOON 3 — CLICKABLE -->
+        <a href="tiers.html" class="balloon-link">
+            <div class="balloon-package">
+                <h3>Sponsor the Air Benders</h3>
+                <p>Includes signage: “Today's balloons courtesy of (your business).”</p>
+                <p>Place your marketing materials at our booth.</p>
+                <p>Optional social media promotion included.</p>
+                <p>"Pop" this balloon for more information.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>Phone:</strong> <a href="tel:+18706548805">+1 (870) 654 8805</a></p>
+        <p><strong>Email:</strong> <a href="mailto:meadowmuffinenterprises@gmail.com">meadowmuffinenterprises@gmail.com</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61590903481942" target="_blank">Meadow Muffin Menagerie</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/meadowmuffinmenagerie" target="_blank">@meadowmuffinmenagerie</a></p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Photo Gallery</h2>
+
+    <div class="slideshow-container">
+        <div class="slide"><img src="slide1.jpg"></div>
+        <div class="slide"><img src="slide2.jpg"></div>
+        <div class="slide"><img src="slide3.jpg"></div>
+        <div class="slide"><img src="slide4.jpg"></div>
+        <div class="slide"><img src="slide5.jpg"></div>
+        <div class="slide"><img src="slide6.jpg"></div>
+        <div class="slide"><img src="slide7.jpg"></div>
+        <div class="slide"><img src="slide8.jpg"></div>
+        <div class="slide"><img src="slide9.jpg"></div>
+        <div class="slide"><img src="slide10.jpg"></div>
+        <div class="slide"><img src="slide11.jpg"></div>
+        <div class="slide"><img src="slide12.jpg"></div>
+    </div>
+</section>
+
+<a class="back-home" href="index.html">← Back to Home</a>
+
+<footer>Meadow Muffin Menagerie © 2026 • All Rights Reserved</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>

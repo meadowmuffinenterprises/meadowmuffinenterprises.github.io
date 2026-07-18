@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadow Muffin Enterprises</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #30b362; /* original green */
+            color: #333;
+        }
+
+        /* ✨ BIG SOFT GLITTER GRADIENT HEADER */
+        header {
+            background: linear-gradient(135deg, #e986f0, #4A6FA5);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image:
+                radial-gradient(rgba(255,255,255,0.7) 4px, transparent 4px),
+                radial-gradient(rgba(255,255,255,0.4) 6px, transparent 6px),
+                radial-gradient(rgba(255,255,255,0.3) 3px, transparent 3px);
+            background-size: 40px 40px, 60px 60px, 30px 30px;
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .business-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .business-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .business-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .business-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .business-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .text-section {
+            padding: 15px;
+            margin-top: -8px;
+            color: white;
+        }
+
+        .menagerie-text {
+            background: #D9A5B3;
+        }
+
+        .adapts-text {
+            background: #9B6CC4;
+        }
+
+        .tech-text {
+            background: #2F5E4E;
+        }
+
+        .color-bar {
+            height: 14px;
+            width: 100%;
+        }
+
+        .menagerie-bar {
+            background: #D9A5B3;
+        }
+
+        .adapts-bar {
+            background: #9B6CC4;
+        }
+
+        .tech-bar {
+            background: #2F5E4E;
+        }
+
+        /* ✨ POPPY LINK SECTION */
+        .poppy-link-section {
+            text-align: center;
+            margin: 60px auto 40px auto;
+            color: white;
+        }
+
+        .poppy-link-section a {
+            display: inline-block;
+            background: #f5a6f3;
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 14px 28px;
+            border-radius: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .poppy-link-section a:hover {
+            background: #ff9ad8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #e986f0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Meadow Muffin Enterprises</h1>
+    <p>Creative Services • Balloon Art • Family Entertainment</p>
+    <p>Turning Meadow Muffins into Wildflowers</p>
+</header>
+
+<section class="business-section">
+    <h2>Our Businesses</h2>
+
+    <div class="business-grid">
+
+        <!-- Meadow Muffin Menagerie -->
+        <a href="menagerie-menu.html" class="business-card">
+            <img src="meadow-muffin-menagerie-logo.jpeg" alt="Meadow Muffin Menagerie Logo">
+            <div class="text-section menagerie-text">
+                <h3>Meadow Muffin Menagerie</h3>
+                <p>Balloon twisting, party entertainment, and whimsical creations for all ages.</p>
+            </div>
+            <div class="color-bar menagerie-bar"></div>
+        </a>
+
+        <!-- Audie Adapts -->
+        <a href="audie-adapts.html" class="business-card">
+            <img src="audie-adapts-photo.jpg" alt="Audie Adapts">
+            <div class="text-section adapts-text">
+                <h3>Audie Adapts</h3>
+                <p>Adaptive services, creative solutions, and personalized support for every need.</p>
+            </div>
+            <div class="color-bar adapts-bar"></div>
+        </a>
+
+        <!-- I.T. IT -->
+        <a href="I.T.IT.html" class="business-card">
+            <img src="I.T.-IT.jpeg" alt="I.T. IT">
+            <div class="text-section tech-text">
+                <h3>I.T. IT</h3>
+                <p>Tech support, troubleshooting, and digital problem-solving for home and business.</p>
+            </div>
+            <div class="color-bar tech-bar"></div>
+        </a>
+
+    </div>
+</section>
+
+<!-- ✨ POPPY LINK SECTION ADDED BELOW BUSINESS CARDS -->
+<div class="poppy-link-section">
+    <p>Meet our mascot and ambassador of creativity!</p>
+    <a href="poppyspage.html">🐾 Meet Poppy the Balloon Dog</a>
+</div>
+
+<footer>
+    Meadow Muffin Enterprises © 2026 • All Rights Reserved
+</footer>
+
+</body>
+</html>

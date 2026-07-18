@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadow Muffin Menagerie – Party Packages</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #6cad71; /* sage green */
+            color: #333;
+        }
+
+        header {
+            background: #82a6c2; /* country blue */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* PACKAGE CARDS */
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .package-card {
+            background: #82a6c2; /* country blue */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .package-card:hover {
+            background: #6b8aa3; /* darker country blue */
+            transform: scale(1.03);
+        }
+
+        .package-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .package-card p {
+            font-size: 1rem;
+            color: #f0f4fa; /* soft white-blue */
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: white;
+        }
+
+        /* BOOKING FORM — PASTEL MUTED PINK */
+        form {
+            background: #f3c6dd; /* pastel muted pink */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+        }
+
+        .radio-row {
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #333;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #82a6c2; /* country blue */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #6b8aa3; /* darker country blue */
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #82a6c2; /* country blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Meadow Muffin Menagerie</h1>
+    <p>Balloon Twisting • Party Entertainment • Custom Creations</p>
+</header>
+
+<!-- PACKAGES SECTION -->
+<section class="section">
+    <h2>Party Packages</h2>
+
+    <div class="package-grid">
+
+        <!-- PACKAGE 1 -->
+        <div class="package-card">
+            <h3>Festival/Event (Customer Purchases Individual Items)</h3>
+            <p>Perfect for festivals, fairs, school events, or anywhere with foot traffic.</p>
+            <p class="price">Pay Per Balloon</p>
+            <p>Guests choose from our 12 balloon designs and pay individually.</p>
+        </div>
+
+        <!-- PACKAGE 2 -->
+        <div class="package-card">
+            <h3>We Entertain Your Party</h3>
+            <p>Great for birthdays, family gatherings, and private events.</p>
+            <p class="price">$100 • 1 Hour • Up to 30 Kids</p>
+            <p class="price">$150 • 2 Hours • Up to 50 Kids</p>
+            <p>Includes unlimited balloons from our 12‑design menu.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="section">
+    <h2>Book Your Event</h2>
+
+    <form>
+        <label>Your Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Event Address</label>
+        <input type="text" placeholder="Street, City, State">
+
+        <label>Arrival Time</label>
+        <input type="time">
+
+        <label>Package Type</label>
+        <select>
+            <option>Festival/Event (Customer Purchases Individual Items)</option>
+            <option>1 Hour Party Package ($100)</option>
+            <option>2 Hour Party Package ($150)</option>
+        </select>
+
+        <label>Service Type</label>
+        <div class="radio-row">
+            <label><input type="radio" name="service" value="in-person" checked> In‑Person Event</label>
+            <label><input type="radio" name="service" value="shipping"> We Deliver to Local Businesses (Boone/Carroll)</label>
+        </div>
+
+        <label>Message / Special Requests</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Submit Booking Request</button>
+    </form>
+
+    <a class="back-home" href="index.html">← Back to Home</a>
+</section>
+
+<footer>
+    Meadow Muffin Menagerie © 2026 • All Rights Reserved
+</footer>
+
+</body>
+</html>

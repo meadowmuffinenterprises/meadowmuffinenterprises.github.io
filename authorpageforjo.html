@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. R. R. Savage • Meadow Muffin Enterprises</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #30b362;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8adf, #ff4fbf, #d94ad6);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image:
+                radial-gradient(rgba(255,255,255,0.8) 3px, transparent 3px),
+                radial-gradient(rgba(255,255,255,0.5) 5px, transparent 5px),
+                radial-gradient(rgba(255,255,255,0.3) 2px, transparent 2px);
+            background-size: 35px 35px, 55px 55px, 25px 25px;
+            opacity: 0.6;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .author-section {
+            padding: 30px 20px;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* HOT PINK AUTHOR BOX */
+        .author-card {
+            background: #ff4fbf;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        /* SAGE GREEN BOOK BOX */
+        .book-card {
+            background: #9bb08f;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .author-card:hover, .book-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .author-photo, .book-photo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            background-color: #f7f7f7;
+        }
+
+        .author-info, .book-info {
+            padding: 20px;
+        }
+
+        .author-info h2, .book-info h2 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .author-info p, .book-info p {
+            margin-top: 12px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ff8adf;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background: #ffb3e8;
+            transform: scale(1.05);
+        }
+
+        /* ⭐ BACK BUTTON */
+        .back-button {
+            display: inline-block;
+            margin: 25px auto;
+            background: #e986f0;
+            color: white;
+            padding: 12px 26px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #ffb3f5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #e986f0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>J. R. R. Savage</h1>
+    <p>The Pink‑Powered Creative Force Behind Meadow Muffin Enterprises</p>
+</header>
+
+<section class="author-section">
+
+    <div class="author-card">
+        <img src="author-photo.jpg" alt="J. R. R. Savage" class="author-photo">
+
+        <div class="author-info">
+            <h2>J. R. R. Savage</h2>
+            <p>
+                J.R.R. Savage is an emerging author whose goal is to empower children with the tools they need to succeed in life through
+                teaching social and emotional learning and life skills. She has years of experience helping children of all ages and ability
+                levels through ministry, caregiving, classroom assistance, and community volunteering. She holds a B.S. in Psychology from
+                Truett McConnell University and is a driven wife, sister, and friend who loves giving back to her community.
+            </p>
+        </div>
+    </div>
+
+    <div class="book-card">
+        <img src="poppysbook.jpg" alt="Book Cover" class="book-photo">
+
+        <div class="book-info">
+            <h2>Her Latest Book</h2>
+            <p>
+                A heart‑centered children’s book designed to help young readers build confidence, emotional awareness, and practical life
+                skills. Through gentle storytelling and relatable characters, this book guides children toward resilience, kindness, and
+                self‑understanding.
+            </p>
+
+            <a href="https://www.amazon.com/Poppy-Friends-Meet-J-R-R-Savage-ebook/dp/B0HF3BLK4L/ref=sr_1_1"
+               class="buy-button" target="_blank">
+               Buy the Book
+            </a>
+        </div>
+    </div>
+
+    <!-- ⭐ BACK TO MAIN PAGE BUTTON -->
+    <a href="index.html" class="back-button">⬅ Back to Main Page</a>
+
+</section>
+
+<footer>
+    Meadow Muffin Enterprises © 2026 • All Rights Reserved
+</footer>
+
+</body>
+</html>
